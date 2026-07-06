@@ -22,7 +22,7 @@ jobs:
       - run: node scripts/fetch-calendar.mjs
         env:
           TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
-
+          MARKETAUX_API_KEY: ${{ secrets.MARKETAUX_API_KEY }}
       - run: |
           git config user.name calendar-bot
           git config user.email actions@users.noreply.github.com
