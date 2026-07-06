@@ -1,1 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XAUUSD AI Terminal</title>
+
+    <meta name="description"
+        content="Professional AI Powered XAUUSD Trading Terminal with Live Gold Price, Economic Calendar, News Analysis and AI Trade Signals.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background-blur blur1"></div>
+<div class="background-blur blur2"></div>
+
+<header class="top-header">
+
+<div class="logo">
+
+<h1>XAUUSD AI TERMINAL</h1>
+
+<p>Professional Gold Trading Dashboard</p>
+
+</div>
+
+<div class="header-right">
+
+<div class="market-status open">
+
+<span class="dot"></span>
+
+Market Open
+
+</div>
+
+<div class="last-update">
+
+Last Update
+
+<span id="lastUpdate">
+
+Loading...
+
+</span>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="ticker">
+
+<div class="ticker-title">
+
+BREAKING NEWS
+
+</div>
+
+<div class="ticker-content">
+
+<marquee id="breakingNews" scrollamount="5">
+
+Loading Financial News...
+
+</marquee>
+
+</div>
+
+</section>
+
+<section class="top-cards">
+
+<div class="card">
+
+<div class="label">
+
+Gold Price
+
+</div>
+
+<div class="value" id="goldPrice">
+
+Loading...
+
+</div>
+
+<div class="change positive" id="goldChange">
+
+--
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="label">
+
+Dollar Index
+
+</div>
+
+<div class="value" id="dxyPrice">
+
+Loading...
+
+</div>
+
+<div class="change" id="dxyChange">
+
+--
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="label">
+
+US10Y Bond
+
+</div>
+
+<div class="value" id="bondYield">
+
+Loading...
+
+</div>
+
+<div class="change" id="bondChange">
+
+--
+
+</div>
+
+</div>
+
+<div class="card countdown">
+
+<div class="label">
+
+Next High Impact News
+
+</div>
+
+<div class="value countdown-value" id="countdown">
+
+--:--:--
+
+</div>
+
+<div class="news-name" id="nextNewsName">
+
+Loading...
+
+</div>
+
+</div>
+
+</section>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<div class="side-card">
+
+<h2>Navigation</h2>
+
+<ul>
+
+<li class="active">Today</li>
+
+<li>Tomorrow</li>
+
+<li>This Week</li>
+
+<li>This Month</li>
+
+<li>High Impact</li>
+
+<li>Medium Impact</li>
+
+<li>Low Impact</li>
+
+</ul>
+
+</div>
+
+<div class="side-card">
+
+<h2>Market Summary</h2>
+
+<div class="summary-row">
+
+<span>Gold Trend</span>
+
+<strong id="goldTrend">
+
+Bullish
+
+</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>USD Trend</span>
+
+<strong id="usdTrend">
+
+Neutral
+
+</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>Overall Bias</span>
+
+<strong id="overallBias">
+
+Loading...
+
+</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>AI Confidence</span>
+
+<strong id="confidenceValue">
+
+0%
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="side-card">
+
+<h2>Market Sessions</h2>
+
+<div class="session">
+
+Sydney
+
+<span id="sydneySession">
+
+Closed
+
+</span>
+
+</div>
+
+<div class="session">
+
+Tokyo
+
+<span id="tokyoSession">
+
+Closed
+
+</span>
+
+</div>
+
+<div class="session">
+
+London
+
+<span id="londonSession">
+
+Closed
+
+</span>
+
+</div>
+
+<div class="session">
+
+New York
+
+<span id="newyorkSession">
+
+Closed
+
+</span>
+
+</div>
+
+</div>
+
+</aside>
+
+<main class="main-content">
+
+<section class="chart-card">
+
+<div class="section-title">
+
+TradingView Live Chart
+
+</div>
+
+<div id="tradingviewChart">
+
+TradingView Widget Loading...
+
+</div>
+
+</section>
+
+<section class="news-card">
+
+<div class="section-title">
+
+Current High Impact Event
+
+</div>
+
+<div class="event-grid">
+
+<div class="event-item">
+
+<label>News</label>
+
+<h3 id="eventName">
+
+Loading...
+
+</h3>
+
+</div>
+
+<div class="event-item">
+
+<label>Dungarpur Time</label>
+
+<h3 id="eventTime">
+
+Loading...
+
+</h3>
+
+</div>
+
+<div class="event-item">
+
+<label>Forecast</label>
+
+<h3 id="forecast">
+
+--
+
+</h3>
+
+</div>
+
+<div class="event-item">
+
+<label>Previous</label>
+
+<h3 id="previous">
+
+--
+
+</h3>
+
+</div>
+
+<div class="event-item">
+
+<label>Actual</label>
+
+<h3 id="actual">
+
+Waiting...
+
+</h3>
+
+</div>
+
+<div class="event-item">
+
+<label>Impact</label>
+
+<h3 id="impact">
+
+High
+
+</h3>
+
+</div>
+
+</div>
+
+</section>
