@@ -1,88 +1,41 @@
 import fs from "node:fs/promises";
 
-const feeds = [
-  "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-  "https://nfs.faireconomy.media/ff_calendar_nextweek.json"
-];
-
-async function getJson(url) {
-  for (let i = 1; i <= 3; i++) {
-    const r = await fetch(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0",
-        "Accept": "application/json,text/plain,*/*",
-        "Referer": "https://www.forexfactory.com/",
-        "Origin": "https://www.forexfactory.com"
-      },
-      redirect: "follow"
-    });
-
-    if (r.ok) return await r.json();
-
-    console.log(`${url} -> ${r.status}`);
-
-    if (i === 3) {
-      const body = await r.text();
-      throw new Error(
-        `Calendar feed returned ${r.status}\n${body.substring(0,500)}`
-      );
-    }
-
-    await new Promise(r => setTimeout(r, 2000));
-  }
-}
+const NEWS_API_KEY = process.env.MARKETAUX_API_KEY;
 
 const relevant =
-/fed|fomc|interest rate|inflation|cpi|pce|payroll|employment|unemployment|jobless|gdp|pmi|ism|retail sales|consumer confidence|jolts|durable goods|powell|treasury/i;
+/fed|fomc|interest rate|inflation|cpi|pce|payroll|employment|unemployment|jobless|gdp|pmi|ism|retail sales|consumer confidence|jolts|durable goods|powell|treasury|gold|xau|usd|federal reserve/i;
 
-const importance = {
-  Low: 1,
-  Medium: 2,
-  High: 3
-};
+if (!NEWS_API_KEY) {
+  throw new Error("MARKETAUX_API_KEY GitHub secret is missing");
+}
 
-const batches = await Promise.all(
-  feeds.map(getJson)
-);
+const url =
+`https://api.marketaux.com/v1/news/all?api_token=${NEWS_API_KEY}&language=en&countries=us&limit=100`;
 
-const fresh = batches
-  .flat()
-  .filter(
-    e =>
-      e.country === "USD" &&
-      relevant.test(e.title || "")
-  )
+const response = await fetch(url);
+
+if (!response.ok) {
+  throw new Error(`MarketAux returned ${response.status}`);
+}
+
+const json = await response.json();
+
+const events = (json.data || [])
+  .filter(e => relevant.test(`${e.title} ${e.description || ""}`))
   .map(e => ({
-    CalendarId: `ff-${e.date}-${e.title}`,
-    Date: e.date,
+    CalendarId: e.uuid,
+    Date: e.published_at,
     Country: "United States",
     Event: e.title,
-    Category: e.title,
-    Actual: e.actual || "",
-    Forecast: e.forecast || "",
-    Previous: e.previous || "",
-    Importance: importance[e.impact] || 1,
-    Source: "Forex Factory"
-  }));
-
-let old = [];
-
-try {
-  old = JSON.parse(
-    await fs.readFile("data/calendar.json", "utf8")
-  ).events || [];
-} catch {}
-
-const now = new Date();
-
-const merged = new Map(
-  old.map(e => [e.CalendarId, e])
-);
-
-for (const e of fresh)
-  merged.set(e.CalendarId, e);
-
-const events = [...merged.values()];
+    Category: "Economic News",
+    Actual: "",
+    Forecast: "",
+    Previous: "",
+    Importance: 3,
+    Source: "MarketAux",
+    Url: e.url
+  }))
+  .sort((a, b) => new Date(a.Date) - new Date(b.Date));
 
 await fs.mkdir("data", { recursive: true });
 
@@ -91,6 +44,7 @@ await fs.writeFile(
   JSON.stringify(
     {
       generatedAt: new Date().toISOString(),
+      source: "MarketAux",
       events
     },
     null,
@@ -100,15 +54,34 @@ await fs.writeFile(
 
 const key = process.env.TWELVE_DATA_API_KEY;
 
-const price = await fetch(
+if (!key) {
+  throw new Error("TWELVE_DATA_API_KEY GitHub secret is missing");
+}
+
+const priceResponse = await fetch(
   `https://api.twelvedata.com/quote?symbol=XAU/USD&apikey=${key}`
 );
 
-const market = await price.json();
+const market = await priceResponse.json();
+
+if (!priceResponse.ok || market.status === "error") {
+  throw new Error(market.message || "Twelve Data failed");
+}
 
 await fs.writeFile(
   "data/market.json",
-  JSON.stringify(market, null, 2)
+  JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      symbol: "XAU/USD",
+      price: market.close,
+      change: market.change,
+      percentChange: market.percent_change,
+      previousClose: market.previous_close
+    },
+    null,
+    2
+  )
 );
 
-console.log("Done");
+console.log(`Saved ${events.length} news events and XAU/USD market data`);
