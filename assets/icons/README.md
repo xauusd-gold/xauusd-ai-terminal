@@ -1,1 +1,0 @@
-Logo files will be stored here.
