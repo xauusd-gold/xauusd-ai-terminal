@@ -417,3 +417,627 @@ High
 </div>
 
 </section>
+
+<!-- ===========================
+AI DECISION PANEL
+=========================== -->
+
+<section class="ai-panel">
+
+<div class="section-title">
+
+AI Trade Decision
+
+</div>
+
+<div class="decision-wrapper">
+
+<div class="decision-box">
+
+<div class="decision-label">
+
+Recommendation
+
+</div>
+
+<div id="tradeSignal" class="signal wait">
+
+WAIT
+
+</div>
+
+<p id="signalReason">
+
+Waiting for latest market data...
+
+</p>
+
+</div>
+
+<div class="confidence-box">
+
+<div class="decision-label">
+
+Confidence
+
+</div>
+
+<div class="confidence-value">
+
+<span id="confidencePercent">
+
+0
+
+</span>%
+
+</div>
+
+<div class="confidence-bar">
+
+<div class="confidence-fill" id="confidenceFill">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+RISK METER
+=========================== -->
+
+<section class="risk-card">
+
+<div class="section-title">
+
+AI Risk Meter
+
+</div>
+
+<div class="risk-wrapper">
+
+<div class="risk-circle">
+
+<div class="risk-value">
+
+<span id="riskPercent">
+
+0
+
+</span>%
+
+</div>
+
+</div>
+
+<div class="risk-details">
+
+<div class="risk-row">
+
+<span>Risk Level</span>
+
+<strong id="riskLevel">
+
+Loading...
+
+</strong>
+
+</div>
+
+<div class="risk-row">
+
+<span>Volatility</span>
+
+<strong id="volatility">
+
+Loading...
+
+</strong>
+
+</div>
+
+<div class="risk-row">
+
+<span>Expected Move</span>
+
+<strong id="expectedMove">
+
+Loading...
+
+</strong>
+
+</div>
+
+<div class="risk-row">
+
+<span>Market Strength</span>
+
+<strong id="marketStrength">
+
+Loading...
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+WHY THIS SIGNAL
+=========================== -->
+
+<section class="reason-card">
+
+<div class="section-title">
+
+Why AI Selected This Trade
+
+</div>
+
+<ul id="reasonList">
+
+<li>Loading Analysis...</li>
+
+</ul>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+UPCOMING NEWS TIMELINE
+=========================== -->
+
+<section class="timeline-card">
+
+<div class="section-title">
+
+Upcoming High Impact Timeline
+
+</div>
+
+<div id="timelineContainer">
+
+<div class="timeline-item">
+
+<div class="timeline-time">
+
+Loading...
+
+</div>
+
+<div class="timeline-content">
+
+Loading Economic Calendar...
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+MONTHLY CALENDAR
+=========================== -->
+
+<section class="calendar-card">
+
+<div class="section-title">
+
+Economic Calendar
+
+</div>
+
+<div class="calendar-header">
+
+<button id="prevMonth">
+
+◀
+
+</button>
+
+<h2 id="calendarMonth">
+
+July 2026
+
+</h2>
+
+<button id="nextMonth">
+
+▶
+
+</button>
+
+</div>
+
+<div class="calendar-grid" id="calendarGrid">
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+MARKET OVERVIEW
+=========================== -->
+
+<section class="overview-card">
+
+<div class="section-title">
+
+Market Overview
+
+</div>
+
+<div class="overview-grid">
+
+<div class="overview-box">
+
+<h4>
+
+Gold Trend
+
+</h4>
+
+<p id="overviewGold">
+
+Loading...
+
+</p>
+
+</div>
+
+<div class="overview-box">
+
+<h4>
+
+Dollar Trend
+
+</h4>
+
+<p id="overviewDollar">
+
+Loading...
+
+</p>
+
+</div>
+
+<div class="overview-box">
+
+<h4>
+
+Fed Outlook
+
+</h4>
+
+<p id="overviewFed">
+
+Loading...
+
+</p>
+
+</div>
+
+<div class="overview-box">
+
+<h4>
+
+Market Bias
+
+</h4>
+
+<p id="overviewBias">
+
+Loading...
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ===========================
+LIVE NEWS
+=========================== -->
+
+<section class="news-feed">
+
+<div class="section-title">
+
+Latest Financial News
+
+</div>
+
+<div id="newsContainer">
+
+<div class="news-loading">
+
+Loading Latest Headlines...
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+TRADINGVIEW CHART WIDGET
+====================================== -->
+
+<section class="tv-chart-card">
+
+    <div class="section-title">
+
+        Live XAUUSD Chart
+
+    </div>
+
+    <div class="tradingview-widget-container">
+
+        <div id="tradingview_widget"></div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =====================================
+SYSTEM STATUS
+====================================== -->
+
+<section class="status-card">
+
+    <div class="section-title">
+
+        System Status
+
+    </div>
+
+    <div class="status-grid">
+
+        <div class="status-box">
+
+            <span>Gold API</span>
+
+            <strong id="goldApiStatus">
+
+                Connecting...
+
+            </strong>
+
+        </div>
+
+        <div class="status-box">
+
+            <span>News API</span>
+
+            <strong id="newsApiStatus">
+
+                Connecting...
+
+            </strong>
+
+        </div>
+
+        <div class="status-box">
+
+            <span>Calendar</span>
+
+            <strong id="calendarStatus">
+
+                Connecting...
+
+            </strong>
+
+        </div>
+
+        <div class="status-box">
+
+            <span>AI Engine</span>
+
+            <strong id="aiEngineStatus">
+
+                Initializing...
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =====================================
+FOOTER
+====================================== -->
+
+<footer>
+
+<div class="footer-top">
+
+<div>
+
+<h2>
+
+XAUUSD AI TERMINAL
+
+</h2>
+
+<p>
+
+Professional Gold Trading Dashboard
+
+</p>
+
+</div>
+
+<div class="footer-info">
+
+<div>
+
+Version
+
+<strong>
+
+1.0
+
+</strong>
+
+</div>
+
+<div>
+
+Timezone
+
+<strong>
+
+Asia/Kolkata
+
+</strong>
+
+</div>
+
+<div>
+
+Refresh
+
+<strong>
+
+60 Seconds
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 XAUUSD AI TERMINAL • Designed for Professional Gold Traders
+
+</div>
+
+</footer>
+
+</main>
+
+</div>
+
+
+
+
+
+<!-- =====================================
+CONFIG
+====================================== -->
+
+<script src="config.js"></script>
+
+
+
+
+
+<!-- =====================================
+MAIN SCRIPT
+====================================== -->
+
+<script src="script.js"></script>
+
+
+
+
+
+<!-- =====================================
+TRADINGVIEW SCRIPT
+====================================== -->
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+
+<script>
+
+new TradingView.widget({
+
+container_id: "tradingview_widget",
+
+autosize: true,
+
+symbol: "OANDA:XAUUSD",
+
+interval: "15",
+
+timezone: "Asia/Kolkata",
+
+theme: "light",
+
+style: "1",
+
+locale: "en",
+
+toolbar_bg: "#ffffff",
+
+hide_side_toolbar: false,
+
+allow_symbol_change: false,
+
+withdateranges: true,
+
+save_image: false,
+
+studies: [
+
+"RSI@tv-basicstudies",
+
+"MACD@tv-basicstudies"
+
+]
+
+});
+
+</script>
+
+</body>
+
+</html>
