@@ -1,0 +1,15 @@
+body{
+font-family:Inter,Arial,sans-serif;
+margin:0;
+background:#f7fbff;
+color:#222;
+}
+#app{
+max-width:1200px;
+margin:40px auto;
+padding:24px;
+background:rgba(255,255,255,.75);
+border-radius:20px;
+backdrop-filter:blur(16px);
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}

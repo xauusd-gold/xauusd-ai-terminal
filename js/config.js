@@ -1,0 +1,7 @@
+const CONFIG = {
+  TWELVEDATA_API_KEY: "",
+  FINNHUB_API_KEY: "",
+  TIMEZONE: "Asia/Kolkata",
+  SYMBOL: "XAU/USD",
+  REFRESH_INTERVAL: 60000
+};

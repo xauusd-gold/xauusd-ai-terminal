@@ -1,0 +1,1 @@
+console.log("XAUUSD AI Terminal initialized");
