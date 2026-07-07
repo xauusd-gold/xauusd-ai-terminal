@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-06T23:48:34.096Z",
+  "generatedAt": "2026-07-07T11:25:26.066Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "47e41887-4c99-4274-9e02-c09c2a4d06db",
+      "Date": "2026-07-07T10:41:45.000000Z",
+      "Country": "United States",
+      "Event": "Orezone Provides 2026 Guidance for Casa Berardi",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.manilatimes.net/2026/07/07/tmt-newswire/globenewswire/orezone-provides-2026-guidance-for-casa-berardi/2379703"
+    }
+  ]
 }
