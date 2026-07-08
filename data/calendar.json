@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-07T23:32:22.049Z",
+  "generatedAt": "2026-07-08T09:31:57.475Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "6c19f7ab-edee-43ae-bce5-b55f8c4c799f",
+      "Date": "2026-07-08T07:44:08.000000Z",
+      "Country": "United States",
+      "Event": "Snowline Gold: A Rare Gold Developer Where The District Option Matters (OTCMKTS:SNWGF)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4920520-snowline-gold-a-rare-gold-developer-where-the-district-option-matters"
+    }
+  ]
 }
