@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-08T16:20:09.048Z",
+  "generatedAt": "2026-07-08T21:54:03.047Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "ff919cc8-0c71-4b99-a163-7c6fbd7e55d4",
+      "Date": "2026-07-08T20:48:06.000000Z",
+      "Country": "United States",
+      "Event": "Agnico Eagle Mines: Recent Downturn Is Overdone, But There Is A Catch (NYSE:AEM)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4920714-agnico-eagle-mines-recent-downturn-is-overdone-but-theres-is-a-catch"
+    }
+  ]
 }
