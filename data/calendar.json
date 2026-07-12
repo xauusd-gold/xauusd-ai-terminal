@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-12T11:46:27.190Z",
+  "generatedAt": "2026-07-12T15:40:49.845Z",
   "source": "MarketAux",
   "events": [
     {
-      "CalendarId": "8eb38ff6-2d11-44d9-8fbb-95ac38390867",
-      "Date": "2026-07-12T10:36:48.000000Z",
+      "CalendarId": "54532c07-2e29-413f-8264-51ccaa89d8fe",
+      "Date": "2026-07-12T14:58:48.000000Z",
       "Country": "United States",
-      "Event": "Wall Street Week Ahead",
+      "Event": "Here are the 3 big things we're watching in the stock market this week",
       "Category": "Economic News",
       "Actual": "",
       "Forecast": "",
       "Previous": "",
       "Importance": 3,
       "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4921418-wall-street-week-ahead"
+      "Url": "https://www.cnbc.com/2026/07/12/here-are-the-3-big-things-were-watching-in-the-stock-market-this-week.html"
     }
   ]
 }
