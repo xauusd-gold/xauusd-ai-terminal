@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-14T07:26:10.808Z",
+  "generatedAt": "2026-07-14T12:50:36.960Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "43281d3a-8ab3-4177-bf6c-a12c928526f2",
+      "Date": "2026-07-14T12:20:38.000000Z",
+      "Country": "United States",
+      "Event": "Futures Point To Broadly Lower Open For Wall Street",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.rttnews.com/story.aspx?Id=3666775"
+    }
+  ]
 }
