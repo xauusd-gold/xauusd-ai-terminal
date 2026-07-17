@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-17T12:20:25.040Z",
+  "generatedAt": "2026-07-17T17:48:44.522Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "36349e38-0c32-4e91-b84a-602f639a3f93",
+      "Date": "2026-07-17T16:56:16.000000Z",
+      "Country": "United States",
+      "Event": "IPG Photonics Corporation (IPGP) M&A Call Transcript",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4923007-ipg-photonics-corporation-ipgp-m-and-a-call-transcript"
+    }
+  ]
 }
