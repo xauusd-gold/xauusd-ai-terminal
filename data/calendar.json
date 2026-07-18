@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-18T15:32:47.082Z",
+  "generatedAt": "2026-07-18T19:56:09.091Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "4fbd8f55-f99c-4802-bf37-94e39e988a5e",
+      "Date": "2026-07-18T19:21:17.000000Z",
+      "Country": "United States",
+      "Event": "4DMT Announces Positive 2-Year Data from PRISM Phase 2b Clinical Trial in a Broad Wet AMD Population",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.manilatimes.net/2026/07/19/tmt-newswire/globenewswire/4dmt-announces-positive-2-year-data-from-prism-phase-2b-clinical-trial-in-a-broad-wet-amd-population/2387031"
+    }
+  ]
 }
