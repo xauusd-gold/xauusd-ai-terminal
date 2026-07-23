@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-07-22T20:20:19.675Z",
+  "generatedAt": "2026-07-23T07:44:24.114Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "42ed961a-24e7-416f-9368-dd4bf60c7784",
-      "Date": "2026-07-22T19:40:27.000000Z",
-      "Country": "United States",
-      "Event": "Equinox Gold Corp. (EQX:CA) Shareholder/Analyst Call Transcript",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4924344-equinox-gold-corp-eqx-ca-shareholder-analyst-call-transcript"
-    }
-  ]
+  "events": []
 }
