@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-07-25T15:49:46.151Z",
+  "generatedAt": "2026-07-25T20:14:12.528Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "e52bfc7c-874b-4cb5-a5f5-cb2860af17b5",
-      "Date": "2026-07-25T15:03:40.000000Z",
-      "Country": "United States",
-      "Event": "Gold Royalty: The Cash Flow Catch-Up Supports A Re-Rating (NYSE:GROY)",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4925624-gold-royalty-the-cash-flow-catch-up-supports-a-re-rating"
-    }
-  ]
+  "events": []
 }
