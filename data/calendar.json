@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-07-26T20:16:35.444Z",
+  "generatedAt": "2026-07-27T10:55:46.151Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "c906a917-0911-4301-add8-75b2f32558b9",
-      "Date": "2026-07-26T19:18:23.000000Z",
-      "Country": "United States",
-      "Event": "Cards continue to fly; credit goes to the big players",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/cards-continue-to-fly-credit-goes-to-the-big-players/articleshow/132647421.cms"
-    }
-  ]
+  "events": []
 }
