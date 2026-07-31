@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-07-31T08:20:10.122Z",
+  "generatedAt": "2026-07-31T16:24:37.695Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "37d88707-da06-4e16-8703-c332a7b178d2",
+      "Date": "2026-07-31T16:03:19.000000Z",
+      "Country": "United States",
+      "Event": "Federated Hermes, Inc. (FHI) Q2 2026 Earnings Call Transcript",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4928724-federated-hermes-inc-fhi-q2-2026-earnings-call-transcript"
+    }
+  ]
 }
