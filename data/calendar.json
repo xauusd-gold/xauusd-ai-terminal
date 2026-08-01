@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-01T07:36:42.952Z",
+  "generatedAt": "2026-08-01T11:49:50.176Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "cfeec27d-9933-4648-a713-a3ce9296daf7",
+      "Date": "2026-08-01T11:14:37.000000Z",
+      "Country": "United States",
+      "Event": "Comstock Resources Stock: Work In Progress (NYSE:CRK)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4929149-comstock-resources-work-in-progress"
+    }
+  ]
 }
