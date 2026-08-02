@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-01T20:14:11.056Z",
+  "generatedAt": "2026-08-02T07:40:30.320Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "1399d278-3686-4fb9-9574-7798a3ced70e",
+      "Date": "2026-08-02T05:07:46.000000Z",
+      "Country": "United States",
+      "Event": "US stocks rise to finish a wild July as Amazon soars, Apple sinks and inflation worries worsen",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://jamaica-gleaner.com/article/business/20260802/us-stocks-rise-finish-wild-july-amazon-soars-apple-sinks-and-inflation"
+    }
+  ]
 }
