@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-02T20:16:08.007Z",
+  "generatedAt": "2026-08-03T10:56:55.936Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "5f5c2722-7112-411f-ab7b-e731ed631fe2",
-      "Date": "2026-08-02T19:13:27.000000Z",
-      "Country": "United States",
-      "Event": "RBI special windows seen big enough to bring in $100B",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/news/economy/policy/rbi-special-windows-seen-big-enough-to-bring-in-100b/articleshow/132813309.cms"
-    }
-  ]
+  "events": []
 }
