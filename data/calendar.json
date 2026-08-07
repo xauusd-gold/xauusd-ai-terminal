@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-07T20:54:21.980Z",
+  "generatedAt": "2026-08-07T22:51:50.494Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "f033b17d-9bdf-4eef-9bee-9f5cae4fe8e2",
+      "Date": "2026-08-07T21:46:59.000000Z",
+      "Country": "United States",
+      "Event": "Westhaven Announces Grant of Incentive Stock Options",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.manilatimes.net/2026/08/08/tmt-newswire/globenewswire/westhaven-announces-grant-of-incentive-stock-options/2401268"
+    }
+  ]
 }
