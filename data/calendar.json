@@ -1,32 +1,5 @@
 {
-  "generatedAt": "2026-08-08T10:47:52.054Z",
+  "generatedAt": "2026-08-08T13:08:47.168Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "cd51ae46-2461-4e7b-baaa-68e9e206e32c",
-      "Date": "2026-08-08T09:55:21.000000Z",
-      "Country": "United States",
-      "Event": "Microsoft: Big New AI Advantage, But Beware Duration-Mismatch (NASDAQ:MSFT)",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4933698-microsoft-big-new-ai-advantage-but-beware-duration-mismatch"
-    },
-    {
-      "CalendarId": "ff75804e-efa0-4ac9-b1ea-9818adbd6819",
-      "Date": "2026-08-08T10:05:42.000000Z",
-      "Country": "United States",
-      "Event": "Microsoft Corporation: A Buy And Hold Forever Type Of Stock (NASDAQ:MSFT)",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4933700-microsoft-corporation-a-buy-and-hold-forever-type-of-stock"
-    }
-  ]
+  "events": []
 }
