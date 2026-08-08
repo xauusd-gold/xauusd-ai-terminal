@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-08T20:45:10.424Z",
+  "generatedAt": "2026-08-08T22:42:53.690Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "5d7a6ba3-e3f4-412b-83f6-ac6cfb15a947",
-      "Date": "2026-08-08T20:03:52.000000Z",
-      "Country": "United States",
-      "Event": "McEwen Q2 Earnings Call Highlights",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://finance.yahoo.com/markets/stocks/articles/mcewen-q2-earnings-call-highlights-200352099.html"
-    }
-  ]
+  "events": []
 }
