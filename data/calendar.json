@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-08T07:10:00.168Z",
+  "generatedAt": "2026-08-08T08:55:59.242Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "b684484a-861e-45f9-b68a-45e08b554f0a",
-      "Date": "2026-08-08T05:54:03.000000Z",
-      "Country": "United States",
-      "Event": "The Scotts Miracle-Gro Company (SMG) Analyst/Investor Day Transcript",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4930285-the-scotts-miracle-gro-company-smg-analyst-investor-day-transcript"
-    }
-  ]
+  "events": []
 }
