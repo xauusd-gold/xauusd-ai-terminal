@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-09T10:49:18.202Z",
+  "generatedAt": "2026-08-09T13:11:31.356Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "afbf2dc5-938a-49a6-8df7-82824f5dc023",
+      "Date": "2026-08-09T12:13:04.000000Z",
+      "Country": "United States",
+      "Event": "After Warren Buffett exit, Greg Abel starts deploying Berkshire Hathaway’s $365.5 billion cash pile",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.livemint.com/companies/news/after-warren-buffett-exit-greg-abel-starts-deploying-berkshire-hathaway-s-365-5-billion-cash-pile-11786273845002.html"
+    }
+  ]
 }
