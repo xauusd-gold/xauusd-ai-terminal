@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-10T20:57:15.533Z",
+  "generatedAt": "2026-08-10T22:52:55.276Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "0037112a-6800-48cf-adb7-3f9871ee7b21",
-      "Date": "2026-08-10T20:08:58.000000Z",
-      "Country": "United States",
-      "Event": "US Stocks: Nasdaq ends down as expectations of Hormuz deal fade",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-nasdaq-ends-down-as-expectations-of-hormuz-deal-fade/articleshow/133135481.cms"
-    }
-  ]
+  "events": []
 }
