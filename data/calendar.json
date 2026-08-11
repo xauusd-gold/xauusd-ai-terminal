@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-11T02:23:22.871Z",
+  "generatedAt": "2026-08-11T05:18:39.119Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "70bff9f7-951c-447c-b872-7ed7f3f101f5",
+      "Date": "2026-08-11T04:13:59.000000Z",
+      "Country": "United States",
+      "Event": "Paramount Gold: Ripe For Investment, Terms Still Matter (NYSE:PZG)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4934465-paramount-gold-ripe-for-investment-terms-still-matter"
+    }
+  ]
 }
