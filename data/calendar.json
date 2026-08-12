@@ -1,32 +1,5 @@
 {
-  "generatedAt": "2026-08-12T20:58:53.122Z",
+  "generatedAt": "2026-08-12T22:56:29.740Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "85ea38c0-f19b-4dd6-8fd1-6c8e13241b1f",
-      "Date": "2026-08-12T20:08:14.000000Z",
-      "Country": "United States",
-      "Event": "US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-sp-500-ends-higher-as-coreweave-results-fuel-ai-optimism/articleshow/133192806.cms"
-    },
-    {
-      "CalendarId": "f9f38033-e683-4c8c-810b-64e45ca5abd2",
-      "Date": "2026-08-12T20:09:25.000000Z",
-      "Country": "United States",
-      "Event": "Skaergaard's 2026 Resource Used a $3,500 Gold Assumption; Gold Has Since Traded Above $4,300",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://financialpost.com/globe-newswire/skaergaards-2026-resource-used-a-3500-gold-assumption-gold-has-since-traded-above-4300"
-    }
-  ]
+  "events": []
 }
