@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-12T05:43:42.396Z",
+  "generatedAt": "2026-08-12T07:47:12.929Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "d5e329ef-3f7c-43a7-9e52-02d2f53fcd13",
-      "Date": "2026-08-12T04:25:26.000000Z",
-      "Country": "United States",
-      "Event": "Markets open flat as crude stays near $90, inflation data in focus",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.thehindubusinessline.com/markets/stock-markets/markets-open-flat-as-crude-stays-near-90-inflation-data-in-focus/article71335011.ece"
-    }
-  ]
+  "events": []
 }
