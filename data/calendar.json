@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-13T20:58:32.886Z",
+  "generatedAt": "2026-08-13T22:57:41.228Z",
   "source": "MarketAux",
   "events": [
     {
-      "CalendarId": "e3ef6ed9-04f9-4b9f-865e-e7da096946cb",
-      "Date": "2026-08-13T20:17:16.000000Z",
+      "CalendarId": "9a19519c-13f3-4869-ae3f-40b8faf2dad0",
+      "Date": "2026-08-13T22:10:13.000000Z",
       "Country": "United States",
-      "Event": "Goldman Sachs Set to Secure Bitcoin and Ethereum Income ETFs via Neos Investments Deal",
+      "Event": "Chips Lead, Software Tags Along, and the S&P Grabs Another Record",
       "Category": "Economic News",
       "Actual": "",
       "Forecast": "",
       "Previous": "",
       "Importance": 3,
       "Source": "MarketAux",
-      "Url": "https://www.crowdfundinsider.com/2026/08/296600-goldman-sachs-set-to-secure-bitcoin-and-ethereum-income-etfs-via-neos-investments-deal/"
+      "Url": "https://www.upsidetrader.com/2026/08/13/chips-lead-software-tags-along-and-the-sp-grabs-another-record/"
     }
   ]
 }
