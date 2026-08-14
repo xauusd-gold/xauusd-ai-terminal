@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-13T22:57:41.228Z",
+  "generatedAt": "2026-08-14T02:40:17.903Z",
   "source": "MarketAux",
   "events": [
     {
-      "CalendarId": "9a19519c-13f3-4869-ae3f-40b8faf2dad0",
-      "Date": "2026-08-13T22:10:13.000000Z",
+      "CalendarId": "47bfc8d9-9544-42f8-916c-c96a01710cb9",
+      "Date": "2026-08-14T01:47:23.000000Z",
       "Country": "United States",
-      "Event": "Chips Lead, Software Tags Along, and the S&P Grabs Another Record",
+      "Event": "US 30-year Treasury yield hits highest level since 2001",
       "Category": "Economic News",
       "Actual": "",
       "Forecast": "",
       "Previous": "",
       "Importance": 3,
       "Source": "MarketAux",
-      "Url": "https://www.upsidetrader.com/2026/08/13/chips-lead-software-tags-along-and-the-sp-grabs-another-record/"
+      "Url": "https://www.thehindubusinessline.com/money-and-banking/us-30-year-treasury-yield-tops-52-hitting-highest-borrowing-cost-since-2001/article71343860.ece"
     }
   ]
 }
