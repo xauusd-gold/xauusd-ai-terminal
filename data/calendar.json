@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-14T20:41:21.171Z",
+  "generatedAt": "2026-08-14T22:36:10.414Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "5aeba7df-3103-4d26-bc53-8a1fdc1d87f1",
+      "Date": "2026-08-14T21:57:07.000000Z",
+      "Country": "United States",
+      "Event": "NeuroPace, Inc. (NPCE) Q2 2026 Earnings Call Transcript",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4935971-neuropace-inc-npce-q2-2026-earnings-call-transcript"
+    }
+  ]
 }
