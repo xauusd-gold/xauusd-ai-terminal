@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-14T02:40:17.903Z",
+  "generatedAt": "2026-08-14T05:43:27.367Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "47bfc8d9-9544-42f8-916c-c96a01710cb9",
-      "Date": "2026-08-14T01:47:23.000000Z",
-      "Country": "United States",
-      "Event": "US 30-year Treasury yield hits highest level since 2001",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.thehindubusinessline.com/money-and-banking/us-30-year-treasury-yield-tops-52-hitting-highest-borrowing-cost-since-2001/article71343860.ece"
-    }
-  ]
+  "events": []
 }
