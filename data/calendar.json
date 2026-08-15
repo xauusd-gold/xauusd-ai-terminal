@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-15T16:36:34.543Z",
+  "generatedAt": "2026-08-15T18:44:15.719Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "6491e543-ab5b-4208-89c5-16e68919e6c1",
-      "Date": "2026-08-15T15:40:23.000000Z",
-      "Country": "United States",
-      "Event": "Bill Gates’ Portfolio Just Added Home Depot (HD) Despite Risks. Time to Buy?",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://finance.yahoo.com/markets/stocks/articles/bill-gates-portfolio-just-added-154023511.html"
-    }
-  ]
+  "events": []
 }
