@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-15T12:55:57.205Z",
+  "generatedAt": "2026-08-15T14:35:05.481Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "c7d67953-85cb-4239-a770-e2d9a1a48e75",
+      "Date": "2026-08-15T13:41:48.000000Z",
+      "Country": "United States",
+      "Event": "Nvidia’s Secret $21 Billion SpaceX Windfall — How One Chip Deal Turned Into a Rocket Fortune",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-secret-21-billion-spacex-134148201.html"
+    }
+  ]
 }
