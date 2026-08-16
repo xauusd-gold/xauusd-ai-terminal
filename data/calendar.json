@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-16T14:35:05.960Z",
+  "generatedAt": "2026-08-16T16:37:47.500Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "cf629394-48eb-4c40-9119-21b5a2ac99c1",
-      "Date": "2026-08-16T13:40:27.000000Z",
-      "Country": "United States",
-      "Event": "What to Watch This Week: Retail Earnings, FOMC Minutes, and Housing Data Take Center Stage",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://profitconfidential.com/week-ahead-retail-earnings-fomc-minutes-housing-data-in-focus-schwab-network/"
-    }
-  ]
+  "events": []
 }
