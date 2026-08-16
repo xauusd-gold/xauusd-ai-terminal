@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-15T22:33:43.626Z",
+  "generatedAt": "2026-08-16T01:54:46.595Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "2e881fe4-8358-4bbd-8269-70ca7a19d7af",
+      "Date": "2026-08-15T23:19:00.000000Z",
+      "Country": "United States",
+      "Event": "Vanguard's VGLT or Schwab's SCHQ: Which Long-Term Treasury ETF Is the Better Buy?",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://finance.yahoo.com/markets/options/articles/vanguards-vglt-schwabs-schq-long-231900283.html"
+    }
+  ]
 }
