@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-17T18:54:13.145Z",
+  "generatedAt": "2026-08-17T20:38:29.940Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "adc77405-0d82-44bc-beb8-ee2d48f369ce",
-      "Date": "2026-08-17T18:05:00.000000Z",
-      "Country": "United States",
-      "Event": "Bears Beware: Case For Bull Market Momentum",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://seekingalpha.com/article/4937413-bears-beware-case-for-bull-market-momentum"
-    }
-  ]
+  "events": []
 }
