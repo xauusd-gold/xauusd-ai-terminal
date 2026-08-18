@@ -1,33 +1,7 @@
 {
-  "generatedAt": "2026-08-18T01:46:59.416Z",
+  "generatedAt": "2026-08-18T03:05:34.695Z",
   "source": "MarketAux",
   "events": [
-    {
-      "CalendarId": "650e74df-576e-46b9-a003-8ebd62e2813a",
-      "Date": "2026-08-18T00:00:00.000000Z",
-      "Country": "United States",
-      "Event": "Assessing a Medium-Run Natural Rate of Interest",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.frbsf.org/research-and-insights/publications/economic-letter/2026/08/assessing-medium-run-natural-rate-of-interest/"
-    },
-    {
-      "CalendarId": "11e66b79-b093-4c60-8732-c49f0efbb5e0",
-      "Date": "2026-08-18T00:52:33.000000Z",
-      "Country": "United States",
-      "Event": "Global Market Today: Asian shares advance; oil rises on Middle East concerns",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-shares-advance-oil-rises-on-middle-east-concerns/articleshow/133308986.cms"
-    },
     {
       "CalendarId": "23eb6e43-4d87-42c0-8459-32d2f1eaf416",
       "Date": "2026-08-18T01:13:51.000000Z",
