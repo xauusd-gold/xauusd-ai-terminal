@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-18T16:45:22.636Z",
+  "generatedAt": "2026-08-18T18:53:13.752Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "e920cd09-4aba-4a17-a401-0b5c4ab89c2a",
-      "Date": "2026-08-18T16:23:23.000000Z",
-      "Country": "United States",
-      "Event": "The West Can't Process Enough of This Critical Metal, and the Gap Doesn't Close by 2030",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.manilatimes.net/2026/08/19/tmt-newswire/globenewswire/the-west-cant-process-enough-of-this-critical-metal-and-the-gap-doesnt-close-by-2030/2407900"
-    }
-  ]
+  "events": []
 }
