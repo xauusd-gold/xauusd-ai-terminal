@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-18T03:05:34.695Z",
+  "generatedAt": "2026-08-18T04:47:44.917Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "23eb6e43-4d87-42c0-8459-32d2f1eaf416",
-      "Date": "2026-08-18T01:13:51.000000Z",
-      "Country": "United States",
-      "Event": "CNBC Daily Open: Markets caught between Mideast worries and AI optimism",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.cnbc.com/2026/08/18/cnbc-daily-open-trump-iran-war-nvidia-oil-markets.html"
-    }
-  ]
+  "events": []
 }
