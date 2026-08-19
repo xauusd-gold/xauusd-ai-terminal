@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-19T07:01:32.723Z",
+  "generatedAt": "2026-08-19T08:51:19.322Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "d187b3db-60d4-477b-acc6-86dbfc6bf982",
-      "Date": "2026-08-19T05:56:58.000000Z",
-      "Country": "United States",
-      "Event": "Private Banks Intensify FCNR(B) Push as RBI Swap Window Nears Closure",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.rediff.com/business/report/fcnrb-deposits-private-banks-raise-rates-use-countdown-timers-ahead-of-rbi-deadline/20260819.htm"
-    }
-  ]
+  "events": []
 }
