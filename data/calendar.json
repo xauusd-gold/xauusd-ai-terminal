@@ -1,5 +1,32 @@
 {
-  "generatedAt": "2026-08-20T20:41:12.686Z",
+  "generatedAt": "2026-08-20T22:41:00.105Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "5e9152fa-a24a-4797-8273-e53061ff5dd2",
+      "Date": "2026-08-20T22:15:53.000000Z",
+      "Country": "United States",
+      "Event": "Texas Roadhouse: A Delectable Business At An Unappetizing Price (NASDAQ:TXRH)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4938923-texas-roadhouse-a-delectable-business-at-an-unappetizing-price"
+    },
+    {
+      "CalendarId": "5e583a54-47db-4829-91ec-f0b85cd3de74",
+      "Date": "2026-08-20T22:16:32.000000Z",
+      "Country": "United States",
+      "Event": "Alamos Gold: Short-Term Setbacks Are Distracting From A Re-Rating Opportunity (NYSE:AGI)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4938924-alamos-gold-short-term-setbacks-are-distracting-from-a-re-rating-opportunity"
+    }
+  ]
 }
