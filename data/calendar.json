@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-20T04:48:51.364Z",
+  "generatedAt": "2026-08-20T07:02:12.049Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "ae988874-7974-45b8-89fb-7372bfd90535",
+      "Date": "2026-08-20T06:04:54.000000Z",
+      "Country": "United States",
+      "Event": "Company Notes Series (#16): Federal Home Loan Mortgage Corporation : The Good Investors %",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://www.thegoodinvestors.sg/company-notes-series-16-federal-home-loan-mortgage-corporation/"
+    }
+  ]
 }
