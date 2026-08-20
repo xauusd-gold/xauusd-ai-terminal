@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-20T10:43:12.955Z",
+  "generatedAt": "2026-08-20T13:07:36.333Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "66c5ae1d-4e33-4b64-ab77-38d632e2ac4d",
+      "Date": "2026-08-20T12:02:31.000000Z",
+      "Country": "United States",
+      "Event": "Federal Signal: Solid Fundamentals Keep The Buy Case Intact (NYSE:FSS)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4938672-federal-signal-solid-fundamentals-keep-buy-case-intact"
+    }
+  ]
 }
