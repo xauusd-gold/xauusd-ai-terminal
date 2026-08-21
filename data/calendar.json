@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-21T01:54:13.378Z",
+  "generatedAt": "2026-08-21T03:12:47.231Z",
   "source": "MarketAux",
   "events": [
     {
-      "CalendarId": "0cca3089-8eeb-4a6b-86de-6bb253140f75",
-      "Date": "2026-08-21T00:52:06.000000Z",
+      "CalendarId": "c3431481-e99a-447f-88c9-2e4a327ca59d",
+      "Date": "2026-08-21T01:57:18.000000Z",
       "Country": "United States",
-      "Event": "Global Market Today: Asian stocks follow Wall Street lower, dollar slips",
+      "Event": "Dollar wobbles as investors balk at US Treasury's rescue efforts",
       "Category": "Economic News",
       "Actual": "",
       "Forecast": "",
       "Previous": "",
       "Importance": 3,
       "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-follow-wall-street-lower-dollar-slips/articleshow/133390428.cms"
+      "Url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-wobbles-as-investors-balk-at-us-treasurys-rescue-efforts/articleshow/133390792.cms"
     }
   ]
 }
