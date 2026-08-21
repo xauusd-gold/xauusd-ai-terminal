@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:50:11.954Z",
+  "generatedAt": "2026-08-21T07:03:45.836Z",
   "source": "MarketAux",
-  "events": [
-    {
-      "CalendarId": "7c9bb639-c91f-44b9-b08b-96c127bad423",
-      "Date": "2026-08-21T03:48:31.000000Z",
-      "Country": "United States",
-      "Event": "Bitcoin leaps past $75,000 as crypto rally continues in Asia",
-      "Category": "Economic News",
-      "Actual": "",
-      "Forecast": "",
-      "Previous": "",
-      "Importance": 3,
-      "Source": "MarketAux",
-      "Url": "https://www.thehindubusinessline.com/money-and-banking/cryptocurrency/bitcoin-leaps-past-75000-as-crypto-rally-continues-in-asia/article71372094.ece"
-    }
-  ]
+  "events": []
 }
