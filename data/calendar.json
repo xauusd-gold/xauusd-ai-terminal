@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-21T03:12:47.231Z",
+  "generatedAt": "2026-08-21T04:50:11.954Z",
   "source": "MarketAux",
   "events": [
     {
-      "CalendarId": "c3431481-e99a-447f-88c9-2e4a327ca59d",
-      "Date": "2026-08-21T01:57:18.000000Z",
+      "CalendarId": "7c9bb639-c91f-44b9-b08b-96c127bad423",
+      "Date": "2026-08-21T03:48:31.000000Z",
       "Country": "United States",
-      "Event": "Dollar wobbles as investors balk at US Treasury's rescue efforts",
+      "Event": "Bitcoin leaps past $75,000 as crypto rally continues in Asia",
       "Category": "Economic News",
       "Actual": "",
       "Forecast": "",
       "Previous": "",
       "Importance": 3,
       "Source": "MarketAux",
-      "Url": "https://economictimes.indiatimes.com/markets/forex/forex-news/dollar-wobbles-as-investors-balk-at-us-treasurys-rescue-efforts/articleshow/133390792.cms"
+      "Url": "https://www.thehindubusinessline.com/money-and-banking/cryptocurrency/bitcoin-leaps-past-75000-as-crypto-rally-continues-in-asia/article71372094.ece"
     }
   ]
 }
