@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-08-22T04:44:53.084Z",
+  "generatedAt": "2026-08-22T06:56:01.986Z",
   "source": "MarketAux",
-  "events": []
+  "events": [
+    {
+      "CalendarId": "4d8ec640-553d-4f82-861d-31ad6aa797f2",
+      "Date": "2026-08-22T05:59:40.000000Z",
+      "Country": "United States",
+      "Event": "Mayfair Gold: A Credible Story, But Financing Remains Uncertain (NYSE:MINE)",
+      "Category": "Economic News",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 3,
+      "Source": "MarketAux",
+      "Url": "https://seekingalpha.com/article/4939293-mayfair-gold-a-credible-story-but-financing-remains-uncertain"
+    }
+  ]
 }
