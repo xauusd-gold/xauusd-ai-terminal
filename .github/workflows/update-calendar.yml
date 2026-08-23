@@ -28,10 +28,14 @@ jobs:
         env:
           TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
 
-      - name: Commit refreshed data
+      - name: Refresh widget cache version
+        run: |
+          perl -0pi -e 's/scripts\/xauusd-price-widget\.js\?v=[0-9-]+/scripts\/xauusd-price-widget.js?v=20260824-3/g' index.html
+
+      - name: Commit refreshed data and assets
         run: |
           git config user.name calendar-bot
           git config user.email actions@users.noreply.github.com
-          git add data/calendar.json data/market.json
-          git diff --cached --quiet || git commit -m "data: refresh calendar"
+          git add data/calendar.json data/market.json index.html
+          git diff --cached --quiet || git commit -m "chore: refresh widget cache version"
           git push
