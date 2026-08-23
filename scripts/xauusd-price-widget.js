@@ -11,7 +11,7 @@
     if (!host) return null;
     el = document.createElement('div');
     el.id = 'xauPriceWidget';
-    el.style.cssText = 'margin-left:auto;min-width:245px;padding:12px 16px;border:1px solid rgba(41,118,139,.14);border-radius:18px;background:rgba(255,255,255,.72);box-shadow:0 10px 28px rgba(49,109,125,.08)';
+    el.style.cssText = 'margin-left:auto;min-width:220px;padding:10px 14px;border:1px solid rgba(41,118,139,.14);border-radius:16px;background:rgba(255,255,255,.72);box-shadow:0 8px 24px rgba(49,109,125,.08)';
     host.parentElement.insertBefore(el, host.nextSibling);
     return el;
   };
@@ -30,7 +30,7 @@
       : new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }) + ' IST';
     const changeText = change === null ? 'Waiting for next tick…' : `${change >= 0 ? '+' : ''}${change.toFixed(2)} (${pct >= 0 ? '+' : ''}${pct.toFixed(3)}%)`;
     const changeColor = change === null ? '#64808a' : change >= 0 ? '#07966f' : '#e34e65';
-    node.innerHTML = `<div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#64808a;font-weight:800">XAU/USD <span style="color:${live ? '#07966f' : '#e34e65'}">● ${live ? 'LIVE' : 'OFFLINE'}</span></div><div style="font:800 24px Manrope;margin-top:2px">$${p.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div style="font-size:12px;color:${changeColor}">${changeText}</div><div style="font-size:10px;color:#64808a;margin-top:2px">Last source tick: ${tick}</div>`;
+    node.innerHTML = `<div style="font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:#64808a;font-weight:800">XAU/USD <span style="color:${live ? '#07966f' : '#e34e65'}">● ${live ? 'LIVE' : 'OFFLINE'}</span></div><div style="font:800 24px Manrope;margin-top:2px;line-height:1.1">$${p.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div style="font-size:11px;color:${changeColor}">${changeText}</div><div style="font-size:9px;color:#64808a;margin-top:2px">Last source tick: ${tick}</div>`;
   };
 
   const loadGoldPrice = async () => {
@@ -48,10 +48,15 @@
       console.warn('XAU/USD live feed:', e);
       const node = ensureWidget();
       if (node && lastPrice !== null) render(lastPrice, lastSourceUpdate, false);
-      else if (node) node.innerHTML = '<div style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#e34e65;font-weight:800">XAU/USD ● OFFLINE</div><div style="font-size:12px;color:#64808a;margin-top:6px">Live price feed unavailable</div>';
+      else if (node) node.innerHTML = '<div style="font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:#e34e65;font-weight:800">XAU/USD ● OFFLINE</div><div style="font-size:11px;color:#64808a;margin-top:5px">Live price feed unavailable</div>';
     }
   };
 
-  loadGoldPrice();
-  setInterval(loadGoldPrice, INTERVAL);
+  const boot = () => {
+    loadGoldPrice();
+    setInterval(loadGoldPrice, INTERVAL);
+  };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
+  else boot();
 })();
