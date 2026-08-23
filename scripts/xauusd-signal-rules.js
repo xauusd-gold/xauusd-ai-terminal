@@ -1,9 +1,13 @@
 export function getGoldSignal({ event = '', actual, forecast, importance = 1 }) {
   const name = String(event).toLowerCase();
+  const isMissing = value => value === null || value === undefined || String(value).trim() === '';
+  if (isMissing(actual) || isMissing(forecast)) {
+    return { dir: 'wait', score: Math.max(35, 48 - Number(importance || 1) * 2), reason: 'Actual और Forecast दोनों उपलब्ध होने तक directional signal नहीं बनाना चाहिए.' };
+  }
   const a = Number(actual);
   const f = Number(forecast);
   if (!Number.isFinite(a) || !Number.isFinite(f)) {
-    return { dir: 'wait', score: Math.max(35, 48 - Number(importance || 1) * 2), reason: 'Actual और Forecast दोनों उपलब्ध होने तक directional signal नहीं बनाना चाहिए.' };
+    return { dir: 'wait', score: Math.max(35, 48 - Number(importance || 1) * 2), reason: 'Actual और Forecast दोनों valid numeric values होने चाहिए.' };
   }
   const surprise = a - f;
   const threshold = Math.max(Math.abs(f) * 0.005, 0.01);
