@@ -35,8 +35,52 @@ const $=s=>document.querySelector(s), esc=s=>String(s??'—').replace(/[&<>"']/g
 const fmtDate=d=>new Intl.DateTimeFormat('en-IN',{timeZone:IST,weekday:'short',day:'2-digit',month:'short'}).format(d);
 const fmtTime=d=>new Intl.DateTimeFormat('en-IN',{timeZone:IST,hour:'2-digit',minute:'2-digit',hour12:true}).format(d)+' IST';
 function num(v){const n=parseFloat(String(v??'').replace(/[^-\d.]/g,''));return Number.isFinite(n)?n:null}
-function analyze(e){const name=(e.Event||e.Category||'').toLowerCase(),f=num(e.Forecast||e.TEForecast),p=num(e.Previous),a=num(e.Actual);let inverse=/cpi|inflation|payroll|nfp|employment|jobless|pmi|gdp|retail|rate decision|fed funds/.test(name); if(/unemployment|claims/.test(name)) inverse=false;let dir='wait',reason='Release ke actual number ka wait karein; forecast aur previous se clear statistical edge nahi mil raha.';const basis=a??f;if(basis!==null&&p!==null&&basis!==p){const stronger=basis>p;const goldBull=inverse?!stronger:stronger;dir=goldBull?'long':'short';reason=`${a!==null?'Actual':'Forecast'} ${basis} vs previous ${p}. ${inverse?'Stronger US data/rates usually USD ko support karke gold par pressure daalte hain.':'Is indicator mein higher reading ka gold response context-dependent ho sakta hai.'}`}
-  const imp=+e.Importance||1;const score=Math.min(92,Math.max(48,52+imp*9+(a!==null?7:0)-(dir==='wait'?11:0)));return{dir,score,reason}}
+function analyze(e){
+  const name=(e.Event||e.Category||'').toLowerCase();
+  const forecast=num(e.Forecast||e.TEForecast);
+  const actual=num(e.Actual);
+  const impact=+e.Importance||1;
+
+  if(actual===null||forecast===null){
+    return {
+      dir:'wait',
+      score:Math.max(35,48-impact*2),
+      reason:'Actual और Forecast दोनों उपलब्ध होने तक directional signal नहीं बनाना चाहिए.'
+    };
+  }
+
+  const surprise=actual-forecast;
+  const threshold=Math.max(Math.abs(forecast)*0.005,0.01);
+
+  if(Math.abs(surprise)<threshold){
+    return {
+      dir:'wait',
+      score:45,
+      reason:`Actual ${actual} vs Forecast ${forecast}: meaningful economic surprise नहीं है.`
+    };
+  }
+
+  const bearishWhenHigher=/cpi|inflation|pce|payroll|nfp|employment|pmi|ism|gdp|retail sales|consumer confidence|fed funds|interest rate|rate decision|jolts|durable goods/.test(name);
+  const bullishWhenHigher=/unemployment|jobless claims|initial claims|continuing claims|jobless|claims/.test(name);
+
+  if(!bearishWhenHigher&&!bullishWhenHigher){
+    return {
+      dir:'wait',
+      score:40,
+      reason:`${name} के लिए predefined XAUUSD economic-impact mapping उपलब्ध नहीं है.`
+    };
+  }
+
+  const goldBullish=bullishWhenHigher ? surprise>0 : surprise<0;
+  const strength=Math.min(40,Math.round(Math.abs(surprise)/threshold*10));
+  const score=Math.min(95,Math.max(55,55+strength));
+
+  return {
+    dir:goldBullish?'long':'short',
+    score,
+    reason:`Actual ${actual} vs Forecast ${forecast}. ${goldBullish?'Expected से weaker USD-side data होने के कारण Gold bullish bias.':'Expected से stronger USD-side data होने के कारण Gold bearish bias.'}`
+  };
+}
 function normalize(e){return{...e,Date:e.Date||e.date,Event:e.Event||e.event||e.Category||'Economic release',Country:e.Country||'United States',Importance:+e.Importance||+e.importance||1,Forecast:e.Forecast||e.forecast||e.TEForecast||'',Previous:e.Previous||e.previous||'',Actual:e.Actual||e.actual||''}}
 async function load(){ $('#status').textContent='Fetching latest calendar...';try{let raw=[];try{const r=await fetch(`data/calendar.json?v=${Date.now()}`,{cache:'no-store'});if(r.ok){const j=await r.json();raw=Array.isArray(j)?j:j.events||[]}}catch{}if(!raw.length){const urls=['https://nfs.faireconomy.media/ff_calendar_thisweek.json','https://nfs.faireconomy.media/ff_calendar_nextweek.json'];const batches=await Promise.all(urls.map(async u=>{const r=await fetch(u,{cache:'no-store'});return r.ok?r.json():[]}));const rank={Low:1,Medium:2,High:3};const gold=/fed|fomc|interest rate|inflation|cpi|pce|payroll|employment|unemployment|jobless|gdp|pmi|ism|retail sales|consumer confidence|jolts|durable goods|powell|treasury/i;raw=batches.flat().filter(e=>e.country==='USD'&&gold.test(e.title||'')).map(e=>({Date:e.date,Event:e.title,Country:'United States',Importance:rank[e.impact]||1,Forecast:e.forecast||'',Previous:e.previous||'',Actual:e.actual||''}))}events=raw.map(normalize).filter(e=>e.Date&&!isNaN(new Date(e.Date))).sort((a,b)=>new Date(a.Date)-new Date(b.Date));if(!events.length)throw Error('No events returned');$('#status').textContent=`Live - ${new Intl.DateTimeFormat('en-IN',{timeZone:IST,dateStyle:'medium',timeStyle:'short'}).format(new Date())}`;$('#liveText').textContent='LIVE CALENDAR'}catch(err){events=[];$('#status').textContent='Live feed unavailable - run GitHub updater';$('#liveText').textContent='FEED OFFLINE'}render()}
 function render(){const now=new Date();let list=events.filter(e=>filter==='all'||filter==='upcoming'&&new Date(e.Date)>=now||filter==='high'&&e.Importance>=3);$('#eventCount').textContent=events.length;$('#highCount').textContent=events.filter(e=>e.Importance>=3).length;$('#monthTitle').textContent=new Intl.DateTimeFormat('en-IN',{timeZone:IST,month:'long',year:'numeric'}).format(events[0]?new Date(events[0].Date):now)+' calendar';const groups=Object.groupBy?Object.groupBy(list,e=>fmtDate(new Date(e.Date))):list.reduce((o,e)=>((o[fmtDate(new Date(e.Date))]??=[]).push(e),o),{});$('#calendar').innerHTML=list.length?Object.entries(groups).map(([day,es])=>`<div class="day"><div class="datebar"><strong>${day}</strong><span>${es.length} event${es.length>1?'s':''}</span></div>${es.map(card).join('')}</div>`).join(''):`<div class="empty glass"><h3>No events to show</h3><p>The live feed has not been generated yet or this filter has no matching events.</p></div>`;setNext()}
