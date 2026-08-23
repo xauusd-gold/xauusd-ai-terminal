@@ -5,13 +5,13 @@
   let lastPrice = null;
   let lastSourceUpdate = null;
 
-  // Subtle animated network background inspired by the approved Feriha UI sample.
+  // Visible animated network background.
   const networkStyle = document.createElement('style');
   networkStyle.textContent = `
-    #ferihaNetworkCanvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.62}
+    #ferihaNetworkCanvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.95;mix-blend-mode:multiply}
     body>.shell{position:relative;z-index:1}
     body:before{z-index:-3!important}
-    body:after{z-index:-2!important;opacity:.12!important}
+    body:after{z-index:-2!important;opacity:.06!important}
   `;
   document.head.appendChild(networkStyle);
 
@@ -31,20 +31,20 @@
     canvas.style.width = width + 'px';
     canvas.style.height = height + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const count = Math.max(28, Math.min(58, Math.round((width * height) / 26000)));
+    const count = Math.max(42, Math.min(90, Math.round((width * height) / 18000)));
     particles = Array.from({length: count}, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - .5) * .18,
-      vy: (Math.random() - .5) * .18,
-      r: Math.random() * 1.8 + .7,
+      vx: (Math.random() - .5) * .28,
+      vy: (Math.random() - .5) * .28,
+      r: Math.random() * 2 + 1,
       phase: Math.random() * Math.PI * 2
     }));
   };
 
   const drawNetwork = (time = 0) => {
     ctx.clearRect(0, 0, width, height);
-    const maxDist = Math.min(185, Math.max(120, width * .11));
+    const maxDist = Math.min(230, Math.max(145, width * .14));
     for (const p of particles) {
       p.x += p.vx;
       p.y += p.vy;
@@ -60,9 +60,9 @@
         const dx = a.x - b.x, dy = a.y - b.y;
         const dist = Math.hypot(dx, dy);
         if (dist < maxDist) {
-          const alpha = (1 - dist / maxDist) * .15;
-          ctx.strokeStyle = `rgba(22,137,190,${alpha})`;
-          ctx.lineWidth = .8;
+          const alpha = (1 - dist / maxDist) * .32;
+          ctx.strokeStyle = `rgba(18,125,178,${alpha})`;
+          ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
@@ -71,14 +71,14 @@
       }
     }
     for (const p of particles) {
-      const pulse = .65 + Math.sin(time * .0012 + p.phase) * .35;
+      const pulse = .7 + Math.sin(time * .0014 + p.phase) * .3;
       ctx.beginPath();
-      ctx.fillStyle = `rgba(15,145,205,${.34 * pulse})`;
+      ctx.fillStyle = `rgba(10,132,190,${.8 * pulse})`;
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fill();
       ctx.beginPath();
-      ctx.fillStyle = `rgba(38,176,231,${.055 * pulse})`;
-      ctx.arc(p.x, p.y, p.r * 5, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(38,176,231,${.12 * pulse})`;
+      ctx.arc(p.x, p.y, p.r * 6, 0, Math.PI * 2);
       ctx.fill();
     }
     requestAnimationFrame(drawNetwork);
@@ -111,9 +111,7 @@
     const pct = lastPrice && lastPrice !== 0 ? (change / lastPrice) * 100 : null;
     const sourceDate = sourceUpdatedAt ? new Date(sourceUpdatedAt) : null;
     const validDate = sourceDate && !Number.isNaN(sourceDate.getTime());
-    const tick = validDate
-      ? sourceDate.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }) + ' IST'
-      : new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }) + ' IST';
+    const tick = validDate ? sourceDate.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }) + ' IST' : new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }) + ' IST';
     const changeText = change === null ? 'Waiting for next tick…' : `${change >= 0 ? '+' : ''}${change.toFixed(2)} (${pct >= 0 ? '+' : ''}${pct.toFixed(3)}%)`;
     const changeColor = change === null ? '#64808a' : change >= 0 ? '#07966f' : '#e34e65';
     node.innerHTML = `<div style="font-size:10px;letter-spacing:1.1px;text-transform:uppercase;color:#64808a;font-weight:800">XAU/USD <span style="color:${live ? '#07966f' : '#e34e65'}">● ${live ? 'LIVE' : 'OFFLINE'}</span></div><div style="font:800 24px Manrope;margin-top:2px;line-height:1.1">$${p.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</div><div style="font-size:11px;color:${changeColor}">${changeText}</div><div style="font-size:9px;color:#64808a;margin-top:2px">Last source tick: ${tick}</div>`;
