@@ -63,5 +63,6 @@ function card(e){const a=analyze(e),color=a.dir==='long'?'var(--green)':a.dir===
 function updateCountdown(next){clearInterval(timer);if(!next){$('#countdown').textContent='--:--:--';return}const tick=()=>{const ms=new Date(next.Date)-new Date();if(ms<=0){$('#countdown').textContent='LIVE';return}const h=Math.floor(ms/36e5),m=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);$('#countdown').textContent=[h,m,s].map(x=>String(x).padStart(2,'0')).join(':')};tick();timer=setInterval(tick,1000)}
 document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render()});$('#refresh').onclick=load;load();
 </script>
+  <script src="scripts/xauusd-price-widget.js"></script>
 </body>
 </html>
