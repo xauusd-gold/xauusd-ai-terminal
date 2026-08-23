@@ -2,6 +2,10 @@ name: Update live economic calendar
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/fetch-calendar.mjs"
+      - ".github/workflows/update-calendar.yml"
   schedule:
     - cron: "7 */2 * * *"
 
@@ -19,11 +23,13 @@ jobs:
         with:
           node-version: 22
 
-      - run: node scripts/fetch-calendar.mjs
+      - name: Fetch live calendar and XAU/USD price
+        run: node scripts/fetch-calendar.mjs
         env:
           TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
-          MARKETAUX_API_KEY: ${{ secrets.MARKETAUX_API_KEY }}
-      - run: |
+
+      - name: Commit refreshed data
+        run: |
           git config user.name calendar-bot
           git config user.email actions@users.noreply.github.com
           git add data/calendar.json data/market.json
