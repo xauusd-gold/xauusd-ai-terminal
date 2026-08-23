@@ -1,0 +1,18 @@
+name: XAUUSD Signal Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  signal-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run signal regression tests
+        run: node tests/xauusd-signal-rules.test.mjs
