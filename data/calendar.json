@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-24T14:55:44.878Z",
+  "generatedAt": "2026-08-24T16:52:03.892Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
-      "CalendarId": "USD-2026-08-24T14:00:00-04:00-Treasury Sec Bessent Speaks",
-      "Date": "2026-08-24T14:00:00-04:00",
+      "CalendarId": "USD-2026-08-24T13:00:00-04:00-Treasury Sec Bessent Speaks",
+      "Date": "2026-08-24T13:00:00-04:00",
       "Country": "USD",
       "Event": "Treasury Sec Bessent Speaks",
       "Category": "Economic Calendar",
@@ -27,6 +27,18 @@
       "Source": "Forex Factory / Fair Economy"
     },
     {
+      "CalendarId": "USD-2026-08-25T08:30:00-04:00-FOMC Member Barkin Speaks",
+      "Date": "2026-08-25T08:30:00-04:00",
+      "Country": "USD",
+      "Event": "FOMC Member Barkin Speaks",
+      "Category": "Economic Calendar",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 1,
+      "Source": "Forex Factory / Fair Economy"
+    },
+    {
       "CalendarId": "USD-2026-08-25T10:00:00-04:00-CB Consumer Confidence",
       "Date": "2026-08-25T10:00:00-04:00",
       "Country": "USD",
@@ -36,6 +48,18 @@
       "Forecast": "90.3",
       "Previous": "90.8",
       "Importance": 2,
+      "Source": "Forex Factory / Fair Economy"
+    },
+    {
+      "CalendarId": "USD-2026-08-25T16:00:00-04:00-FOMC Member Barkin Speaks",
+      "Date": "2026-08-25T16:00:00-04:00",
+      "Country": "USD",
+      "Event": "FOMC Member Barkin Speaks",
+      "Category": "Economic Calendar",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
     },
     {
@@ -107,6 +131,18 @@
       "Actual": "",
       "Forecast": "0.2%",
       "Previous": "0.2%",
+      "Importance": 1,
+      "Source": "Forex Factory / Fair Economy"
+    },
+    {
+      "CalendarId": "USD-2026-08-26T11:45:00-04:00-FOMC Member Barkin Speaks",
+      "Date": "2026-08-26T11:45:00-04:00",
+      "Country": "USD",
+      "Event": "FOMC Member Barkin Speaks",
+      "Category": "Economic Calendar",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
       "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
     },
