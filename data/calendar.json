@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T22:39:32.502Z",
+  "generatedAt": "2026-08-25T01:48:44.976Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
@@ -105,7 +105,7 @@
       "Event": "Core Durable Goods Orders m/m",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "0.5%",
+      "Forecast": "0.6%",
       "Previous": "0.6%",
       "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
@@ -117,7 +117,7 @@
       "Event": "Durable Goods Orders m/m",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "0.5%",
+      "Forecast": "0.4%",
       "Previous": "0.3%",
       "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
@@ -165,7 +165,7 @@
       "Event": "Chicago PMI",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "57.8",
+      "Forecast": "57.9",
       "Previous": "57.6",
       "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
