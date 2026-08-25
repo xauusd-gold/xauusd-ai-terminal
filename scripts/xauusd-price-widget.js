@@ -50,8 +50,8 @@
     particles = Array.from({length: count}, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      vx: (Math.random() - .5) * .28,
-      vy: (Math.random() - .5) * .28,
+      vx: (Math.random() - .5) * .56,
+      vy: (Math.random() - .5) * .56,
       r: Math.random() * 2 + 1,
       phase: Math.random() * Math.PI * 2
     }));
