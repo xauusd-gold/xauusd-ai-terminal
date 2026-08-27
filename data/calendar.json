@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T09:35:28.457Z",
+  "generatedAt": "2026-08-27T20:22:02.875Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
@@ -156,6 +156,18 @@
       "Forecast": "208K",
       "Previous": "206K",
       "Importance": 2,
+      "Source": "Forex Factory / Fair Economy"
+    },
+    {
+      "CalendarId": "USD-2026-08-28T09:00:00-04:00-FOMC Member Hammack Speaks",
+      "Date": "2026-08-28T09:00:00-04:00",
+      "Country": "USD",
+      "Event": "FOMC Member Hammack Speaks",
+      "Category": "Economic Calendar",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
     },
     {
