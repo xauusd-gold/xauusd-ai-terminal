@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T13:36:37.183Z",
+  "generatedAt": "2026-08-31T19:59:22.020Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
@@ -45,7 +45,7 @@
       "Event": "ISM Manufacturing Prices",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "71.2",
+      "Forecast": "70.5",
       "Previous": "71.1",
       "Importance": 2,
       "Source": "Forex Factory / Fair Economy"
@@ -81,7 +81,7 @@
       "Event": "ADP Non-Farm Employment Change",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "47K",
+      "Forecast": "48K",
       "Previous": "44K",
       "Importance": 2,
       "Source": "Forex Factory / Fair Economy"
@@ -165,7 +165,7 @@
       "Event": "Non-Farm Employment Change",
       "Category": "Economic Calendar",
       "Actual": "",
-      "Forecast": "58K",
+      "Forecast": "55K",
       "Previous": "-23K",
       "Importance": 3,
       "Source": "Forex Factory / Fair Economy"
