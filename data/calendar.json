@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T11:33:58.086Z",
+  "generatedAt": "2026-09-01T16:34:01.819Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
@@ -63,8 +63,8 @@
       "Source": "Forex Factory / Fair Economy"
     },
     {
-      "CalendarId": "USD-2026-09-01T10:10:00-04:00-RCM/TIPP Economic Optimism",
-      "Date": "2026-09-01T10:10:00-04:00",
+      "CalendarId": "USD-2026-09-01T10:04:00-04:00-RCM/TIPP Economic Optimism",
+      "Date": "2026-09-01T10:04:00-04:00",
       "Country": "USD",
       "Event": "RCM/TIPP Economic Optimism",
       "Category": "Economic Calendar",
