@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T11:11:05.906Z",
+  "generatedAt": "2026-09-04T16:17:08.653Z",
   "source": "Forex Factory / Fair Economy",
   "events": [
     {
@@ -180,6 +180,18 @@
       "Forecast": "4.1%",
       "Previous": "4.1%",
       "Importance": 3,
+      "Source": "Forex Factory / Fair Economy"
+    },
+    {
+      "CalendarId": "USD-2026-09-04T18:00:00-04:00-FOMC Member Goolsbee Speaks",
+      "Date": "2026-09-04T18:00:00-04:00",
+      "Country": "USD",
+      "Event": "FOMC Member Goolsbee Speaks",
+      "Category": "Economic Calendar",
+      "Actual": "",
+      "Forecast": "",
+      "Previous": "",
+      "Importance": 1,
       "Source": "Forex Factory / Fair Economy"
     }
   ]
